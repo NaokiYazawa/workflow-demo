@@ -18,8 +18,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      # - name: Install semantic-release
-      #   run: yarn add semantic-release
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
