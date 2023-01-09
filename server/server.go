@@ -25,7 +25,7 @@ func New() *Server {
 	}
 
 	router.GET("/", server.CounterHandler)
-	router.GET("/health_checks", server.HealthHandler)
+	router.GET("/health_check", server.HealthHandler)
 
 	return server
 }
